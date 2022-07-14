@@ -1,0 +1,23 @@
+[package]
+name = "explorer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = { version = "*" }
+cortex-m-rt = { version = "*" }
+rp2040-hal = { version = "0.5.0" }
+embedded-hal = { version = "*" }
+embedded-time = { version = "*" }
+embedded-graphics = { version = "*" }
+# pimoroni-pico-explorer = { version = "*" }
+panic-halt = { version = "*" }
+arrayvec = { version="0.7.1", default-features=false }
+defmt = { version = "*" }
+defmt-rtt = { version = "*" }
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+st7789 = { version = "*" }
+display-interface-spi = { version = "*" }
+rp2040-boot2 = { version = "*" }
